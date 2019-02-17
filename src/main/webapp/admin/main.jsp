@@ -108,6 +108,7 @@
 
 <div region="south" style="height: 25px;padding: 5px" align="center">
     Copyright © 2018-2019 许同的SSM博客系统 版权所有
+    博客代码参考CSDN空余啊的博客搭建 https://blog.csdn.net/xp541130126/article/category/6860628
 </div>
 </body>
 </html>

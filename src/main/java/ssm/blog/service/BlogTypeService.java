@@ -1,6 +1,7 @@
 package ssm.blog.service;
 
 import org.springframework.stereotype.Service;
+import ssm.blog.dao.BlogTypeDao;
 import ssm.blog.entity.BlogType;
 import ssm.blog.entity.PageBean;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @Description 博客类别service接口
  */
 public interface BlogTypeService {
+
 
     //分页查询
     PageBean<BlogType> listByPage(PageBean<BlogType> pageBean);
@@ -28,6 +30,7 @@ public interface BlogTypeService {
     // 删除博客类别
     public Integer deleteBlogType(Integer id);
 
+    // 列出博客信息
     public List<BlogType> getBlogTypeData();
 
 }

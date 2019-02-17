@@ -1,16 +1,25 @@
 package ssm.blog.entity;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
+/**
+ * Created by xp on 2017/4/14.
+ */
 public class PageBean<T> {
-    private int currPage;
-    private int pageSize;
-    private long total;
+
+    private int currPage;   //当前页数
+    private int pageSize;   //每页显示的个数
+    private long total;      //总记录数
     private int start;
     private int end;
-    private List<T> result;
+    private List<T> result; //分页查询的结果
+    private Map<String,Object> map = new HashMap<String,Object>();   //查询条件
 
-    public PageBean() {
+
+    PageBean(){
+
     }
 
     public PageBean(int currPage, int pageSize) {
@@ -44,6 +53,14 @@ public class PageBean<T> {
         this.total = total;
     }
 
+    public List<T> getResult() {
+        return result;
+    }
+
+    public void setResult(List<T> result) {
+        this.result = result;
+    }
+
     public int getStart() {
         return start;
     }
@@ -60,12 +77,12 @@ public class PageBean<T> {
         this.end = end;
     }
 
-    public List<T> getResult() {
-        return result;
+    public Map<String, Object> getMap() {
+        return map;
     }
 
-    public void setResult(List<T> result) {
-        this.result = result;
+    public void setMap(Map<String, Object> map) {
+        this.map = map;
     }
 
     @Override
