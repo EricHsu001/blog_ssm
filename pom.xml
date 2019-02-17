@@ -13,7 +13,8 @@
 
   <!-- 集中定义版本信息 -->
     <properties>
-        <spring-framework.version>4.3.17.RELEASE</spring-framework.version>
+        <spring-framework.version>4.3.18.RELEASE</spring-framework.version>
+        <lucene-framework.version>7.1.0</lucene-framework.version>
         <jdk.version>1.8</jdk.version>
     </properties>
 
@@ -249,27 +250,27 @@
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
-            <version>5.3.1</version>
+            <version>${lucene-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-queryparser</artifactId>
-            <version>5.3.1</version>
+            <version>${lucene-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-analyzers-common</artifactId>
-            <version>5.3.1</version>
+            <version>${lucene-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-highlighter</artifactId>
-            <version>5.3.1</version>
+            <version>${lucene-framework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-analyzers-smartcn</artifactId>
-            <version>5.3.1</version>
+            <version>${lucene-framework.version}</version>
         </dependency>
 
         <!-- apache共公包 -->
@@ -285,7 +286,7 @@
         <dependency>
             <groupId>commons-fileupload</groupId>
             <artifactId>commons-fileupload</artifactId>
-            <version>1.3.2</version>
+            <version>1.3.3</version>
         </dependency>
 
         <!-- 添加junit支持 -->
